@@ -1,0 +1,27 @@
+[project]
+name = "mcp-server"
+version = "0.1.0"
+description = "MCP server for PDF processing, vector DB, and Google Drive integration"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+    "pdfplumber",
+    "tabulate",
+    "chromadb",
+    "sentence-transformers",
+    "boto3",
+    "opensearch-py",
+    "requests-aws4auth",
+    "google-api-python-client",
+    "google-auth",
+    "google-auth-oauthlib"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+exclude = ["tests*", "test*"]

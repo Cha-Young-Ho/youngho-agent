@@ -1,0 +1,20 @@
+# MCP 서버 기본
+mcp
+
+# PDF 처리
+pdfplumber
+tabulate
+
+# 벡터 DB (로컬)
+chromadb
+sentence-transformers
+
+# AWS 서비스 (프로덕션)
+boto3
+opensearch-py
+requests-aws4auth
+
+# Google Drive API
+google-api-python-client
+google-auth
+google-auth-oauthlib
